@@ -70,7 +70,7 @@ header {
   border-radius: 5px;
 }
 
-/* Hero Section */
+/* Hero Section (Index & Tournament Pages) */
 .hero {
   display: flex;
   flex-direction: column;
@@ -92,31 +92,6 @@ header {
   z-index: 1;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #a00909, hsl(52, 89%, 48%), hwb(220 10% 2%));
-  background-size: 400% 400%;
-  animation: gradientMove 10s ease infinite;
-  z-index: 0;
-}
-
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 /* ACADEMY POSTER */
 .academy-poster {
   position: relative;
@@ -128,7 +103,6 @@ header {
   height: auto;
   display: block;
 }
-
 
 /* ACADEMY – TWO BLOCK STACK */
 .academy-about {
@@ -155,11 +129,19 @@ header {
   text-align: left;
 }
 
-/* TOURNAMENT CARDS on index.html */
-.home-tournaments {
-  background: #000;
-  padding: 4rem 2rem;
+/* Common Section Headers */
+.section-title {
+  font-size: 2.2rem;
   color: #fff;
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  letter-spacing: 1px;
+  border-bottom: 3px solid red;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-header {
@@ -187,6 +169,7 @@ header {
   text-shadow: 0 0 8px red;
 }
 
+/* Tournament Cards */
 .tournament-card-wrapper {
   display: grid;
   gap: 2rem;
@@ -199,6 +182,7 @@ header {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
   transition: 0.3s;
+  height: auto;
 }
 .tournament-card:hover {
   transform: scale(1.03);
@@ -242,7 +226,7 @@ header {
   box-shadow: 0 0 10px red;
 }
 
-/* GALLERY SLIDER on index.html */
+/* Gallery Slider */
 .home-gallery {
   background: #111;
   padding: 4rem 2rem;
@@ -270,7 +254,7 @@ header {
   scroll-snap-align: start;
 }
 
-/* GALLERY PAGE */
+/* Gallery Page */
 .gallery-page {
   padding: 4rem 2rem;
   background: #000;
@@ -292,8 +276,7 @@ header {
   transform: scale(1.05);
 }
 
-
-/* TESTIMONIALS SLIDER */
+/* Testimonials */
 .testimonial-wrapper {
   padding: 2rem 1rem;
   text-align: center;
@@ -373,7 +356,7 @@ header {
   background: #222;
 }
 
-/* NEWSLETTER SIGN-UP */
+/* Newsletter */
 .newsletter {
   text-align: center;
   padding: 4rem 2rem;
@@ -414,7 +397,6 @@ header {
   position: relative;
   font-family: "Saira", sans-serif;
 }
-
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -422,31 +404,26 @@ header {
   gap: 40px;
   margin-bottom: 30px;
 }
-
 .footer-left,
 .footer-links,
 .footer-contact {
   flex: 1 1 250px;
 }
-
 .footer-logo {
   width: 60px;
   margin-bottom: 10px;
   border-radius: 8px;
 }
-
 .footer h2 {
   font-size: 1.5rem;
   color: #ff0000;
   margin-bottom: 10px;
 }
-
 .footer h3 {
   font-size: 1.2rem;
   color: #ffcc00;
   margin-bottom: 15px;
 }
-
 .footer p,
 .footer a {
   font-size: 0.9rem;
@@ -455,30 +432,25 @@ header {
   text-decoration: none;
   transition: 0.3s;
 }
-
 .footer a:hover {
   color: #fff;
   text-shadow: 0 0 10px red;
 }
-
 .social-links {
   margin-top: 15px;
   display: flex;
   gap: 15px;
   justify-content: center;
 }
-
 .social-links a img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   transition: transform 0.3s;
 }
-
 .social-links a:hover img {
   transform: scale(1.1);
 }
-
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #333;
@@ -486,12 +458,10 @@ header {
   font-size: 0.85rem;
   color: #777;
 }
-
 .footer-bottom a {
   color: #aaa;
   margin: 0 10px;
 }
-
 .footer-bottom a:hover {
   color: #fff;
   text-shadow: 0 0 8px #f00;
@@ -504,13 +474,12 @@ header {
     bottom: 25px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adjust spacing between buttons */
+    gap: 15px;
     z-index: 999;
 }
-
 .social-float-container a {
     display: block;
-    width: 30px; /* Adjust size of buttons */
+    width: 30px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -518,29 +487,16 @@ header {
     transition: transform 0.3s;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
-
 .social-float-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .social-float-container a:hover {
   transform: scale(1.1);
 }
 
-/* ACADEMY PAGE */
-.academy-poster {
-  position: relative;
-  overflow: hidden;
-}
-
-.academy-poster img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
+/* Academy Branches Section */
 .academy-branches {
   padding: 4rem 2rem;
   background: #000;
@@ -586,13 +542,6 @@ header {
   padding: 4rem 2rem;
   background: #111;
 }
-.why-choose .section-title {
-  text-align: center;
-  font-size: 2.2rem;
-  color: #fff;
-  margin: 3rem 0 1.5rem;
-  letter-spacing: 1px;
-}
 .reasons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -617,29 +566,34 @@ header {
   font-size: 1rem;
 }
 
-/* Registration Form */
+/* Registration Forms */
 .academy-register {
   padding: 4rem 2rem;
   text-align: center;
   background: #000;
 }
-#regForm {
+.academy-register form, .tournament-register form {
   display: grid;
   gap: 1rem;
   max-width: 500px;
   margin: 2rem auto 0;
 }
-#regForm input,
-#regForm select,
-#regForm textarea {
+.academy-register input,
+.academy-register select,
+.academy-register textarea,
+.tournament-register input,
+.tournament-register select,
+.tournament-register textarea {
   padding: 0.8rem;
   border: none;
   background: #1a1a1a;
   color: #fff;
   border-radius: 6px;
   font-family: 'Saira', sans-serif;
+  resize: none;
 }
-#regForm button {
+.academy-register button,
+.tournament-register button {
   background: red;
   color: white;
   padding: 1rem;
@@ -648,12 +602,13 @@ header {
   cursor: pointer;
   transition: 0.3s;
 }
-#regForm button:hover {
+.academy-register button:hover,
+.tournament-register button:hover {
   background: #e60000;
   box-shadow: 0 0 10px red;
 }
 
-/* TOURNAMENT PAGE */
+/* Tournament Pages */
 .tournament-hero {
   height: 75vh;
   background: url('images/banner.png') center/cover no-repeat;
@@ -684,8 +639,8 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
   overflow: hidden;
-  height: 400px;
-  width: 320px;
+  height: auto;
+  width: 100%;
 }
 .tournament-card img {
   width: 100%;
@@ -700,41 +655,12 @@ header {
   padding: 4rem 2rem;
   background: #111;
 }
-#tourForm {
-  display: grid;
-  gap: 1.2rem;
-  max-width: 550px;
-  margin: 0 auto;
-}
-#tourForm input,
-#tourForm select,
-#tourForm textarea {
-  padding: 1rem;
-  border: none;
-  border-radius: 6px;
-  background: #1a1a1a;
-  color: #fff;
-}
-#tourForm button {
-  padding: 1rem;
-  background: red;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-#tourForm button:hover {
-  background: #e60000;
-  box-shadow: 0 0 10px red;}
-
 
 /* Tournament Details Section for kpl-nepal-tournament.html */
 .tournament-details {
     padding: 4rem 2rem;
     background: #000;
 }
-
 .details-content {
     display: flex;
     flex-wrap: wrap;
@@ -743,51 +669,44 @@ header {
     gap: 3rem;
     margin-top: 2rem;
 }
-
 .image-section {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
     text-align: center;
 }
-
 .text-section {
     flex: 2;
     min-width: 300px;
     max-width: 600px;
 }
-
 .details-image {
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
-
 .details-content h3 {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 1rem;
 }
-
 .details-content ul {
     list-style: none;
     padding-left: 0;
 }
-
 .details-content li {
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
     line-height: 1.5;
 }
 
-/* Download Brochure Button Section */
+/* Download Brochure Button */
 .download-brochure-section {
     text-align: center;
     padding: 2rem 1rem;
     background-color: #0d0d0d;
 }
-
 .brochure-button {
     display: inline-block;
     padding: 1rem 2rem;
@@ -799,7 +718,6 @@ header {
     font-weight: bold;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .brochure-button:hover {
     background-color: #e60000;
     box-shadow: 0 0 10px red;
@@ -811,7 +729,6 @@ header {
   padding: 4rem 2rem;
   text-align: center;
 }
-
 .branch-list ul {
   list-style: none;
   display: flex;
@@ -820,7 +737,6 @@ header {
   gap: 1.5rem;
   margin-top: 2rem;
 }
-
 .branch-list li {
   background: #1a1a1a;
   padding: 1rem 2rem;
@@ -830,75 +746,9 @@ header {
   color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .branch-list li:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
-}
-
-/* Media query for responsiveness */
-@media (max-width: 767px) {
-    .details-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-section {
-        text-align: center;
-    }
-    .brochure-button {
-        display: block;
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-
-
-/* Contact Form Styling */
-.contact-form {
-  background: #1a1a1a;
-  padding: 40px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 600px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 8px;
-  background: #262626;
-  color: #ffffff;
-  font-family: 'Saira', sans-serif;
-}
-
-.contact-form button {
-  display: block;
-  width: 100%;
-  padding: 15px;
-  background: red;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #e60000;
-  box-shadow: 0 0 10px red;
 }
 
 /* Nagpur Academy Section Styling */
@@ -908,12 +758,10 @@ header {
     padding: 2rem;
     text-align: center;
 }
-
 .team-profile-container {
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .coach-card {
     display: flex;
     align-items: center;
@@ -924,15 +772,12 @@ header {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
 .coach-card-left .coach-image {
     margin-right: 2rem;
 }
-
 .coach-card-right .coach-image {
     margin-left: 2rem;
 }
-
 .coach-image {
     width: 200px;
     height: 200px;
@@ -941,37 +786,31 @@ header {
     border: 3px solid red;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
-
 .coach-info {
     text-align: left;
     flex-grow: 1;
 }
-
 .coach-name {
     font-size: 1.8rem;
     margin: 0;
     font-weight: bold;
     color: #ffcc00;
 }
-
 .coach-title {
     font-size: 1.1rem;
     margin: 5px 0 0;
     color: #ccc;
 }
-
 .coach-experience {
     font-size: 1rem;
     margin-top: 1rem;
     color: #eee;
     line-height: 1.4;
 }
-
 .experience-label {
     font-weight: bold;
     color: #fff;
 }
-
 .other-coaches {
     font-size: 1.2rem;
     font-weight: bold;
@@ -979,14 +818,12 @@ header {
     margin-top: 2rem;
     color: #ccc;
 }
-
 .players-section {
     margin-top: 3rem;
     background: #111;
     padding: 2rem;
     border-radius: 12px;
 }
-
 .players-heading {
     font-size: 2rem;
     font-weight: bold;
@@ -996,85 +833,23 @@ header {
     display: inline-block;
     padding-bottom: 0.5rem;
 }
-
 .players-list {
     text-align: left;
     padding: 0 2rem;
 }
-
 .player-item {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
-
 .player-item strong {
     font-weight: bold;
 }
-
 .and-many-more {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 1.5rem;
     color: #ffcc00;
-}
-
-/* Responsive Styles for Tablet and Mobile */
-@media (max-width: 1024px) {
-  .team-profile-container {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 767px) {
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    font-size: 14px;
-  }
-
-  .coach-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .coach-card-left .coach-image {
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-  }
-
-  .coach-card-right .coach-info {
-    order: 2;
-  }
-
-  .coach-card-right .coach-image {
-    margin-left: 0;
-    margin-top: 1.5rem;
-    order: 1;
-  }
-  
-  .coach-image {
-    width: 150px;
-    height: 150px;
-  }
-  
-  .coach-info {
-    text-align: center;
-  }
-  
-  .players-section {
-    padding: 1.5rem;
-  }
-
-  .players-list {
-    padding: 0;
-    text-align: center;
-  }
-  
-  .player-item {
-    font-size: 1rem;
-  }
 }
 
 /* Contact Page Layout */
@@ -1135,23 +910,244 @@ header {
     box-shadow: 0 0 10px red;
 }
 
-/* Responsive styles for smaller screens */
+/* Privacy & Terms Pages */
+.dark-theme {
+  background-color: #000;
+  color: #eee;
+  padding: 40px 20px;
+}
+
+.page-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.page-container h1 {
+  color: #ffcc00;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.page-container h2 {
+  color: #ff6600;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+  .nav-links {
+    gap: 20px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content img, .about-content p {
+    text-align: center;
+  }
+  .why-choose .reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team-profile-container {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 767px) {
-    .contact-container {
-        padding: 30px 15px;
-    }
-    .contact-form {
-        padding: 20px;
-    }
-    .contact-form h2 {
-        font-size: 1.5rem;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-        padding: 12px;
-    }
-    .contact-form button {
-        font-size: 14px;
-    }
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    background: rgba(13, 13, 13, 0.9);
+    padding: 20px 0;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .about-content, .about-content.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content img {
+    width: 100%;
+  }
+  .about-content p {
+    text-align: center;
+  }
+  .tournament-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-wrapper .nav-buttons {
+    margin-top: 2rem;
+  }
+  .newsletter input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .newsletter .btn {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links a {
+    display: block;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .why-choose .reasons {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .academy-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .academy-card {
+    max-width: 100%;
+    margin: 0;
+  }
+  .card-details {
+    text-align: center;
+  }
+  .slider img {
+    height: 200px;
+  }
+  .tournament-hero .overlay {
+    padding: 2rem 1rem;
+  }
+  .tournament-hero h1 {
+    font-size: 2rem;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .gallery-item img {
+    height: auto;
+    width: 100%;
+  }
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+  .coach-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .coach-card-left .coach-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .coach-card-right .coach-info {
+    order: 2;
+  }
+  .coach-card-right .coach-image {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 1;
+  }
+  .coach-image {
+    width: 150px;
+    height: 150px;
+  }
+  .coach-info {
+    text-align: center;
+  }
+  .players-section {
+    padding: 1.5rem;
+  }
+  .players-list {
+    padding: 0;
+    text-align: center;
+  }
+  .player-item {
+    font-size: 1rem;
+  }
+  .brochure-button {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .details-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-section {
+    text-align: center;
+  }
+  .tournament-register button {
+    width: 100%;
+  }
+}
+
+/* Pop-up Modal Styling */
+.status-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: none;
+  text-align: center;
+  font-size: 1.2rem;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+.status-popup.show {
+  display: block;
+  opacity: 1;
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
