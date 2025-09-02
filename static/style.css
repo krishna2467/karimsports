@@ -634,14 +634,29 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 2rem;
 }
+/* Tournament Cards */
+.tournament-card-wrapper {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+}
+
 .tournament-card {
   background: #111;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+  transition: 0.3s;
   height: auto;
-  width: 100%;
+  max-width: 500px; /* Limits the card width on large screens */
+  margin: 0 auto; /* Centers the card horizontally */
 }
+.tournament-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px red;
+}
+
 .tournament-card img {
   width: 100%;
   height: 200px;
