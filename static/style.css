@@ -852,3 +852,227 @@ header {
         width: 90%;
     }
 }
+
+
+/* Contact Form Styling */
+.contact-form {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #262626;
+  color: #ffffff;
+  font-family: 'Saira', sans-serif;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: red;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e60000;
+  box-shadow: 0 0 10px red;
+}
+
+/* Nagpur Academy Section Styling */
+.team-profile-section {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.team-profile-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.coach-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.coach-card-left .coach-image {
+    margin-right: 2rem;
+}
+
+.coach-card-right .coach-image {
+    margin-left: 2rem;
+}
+
+.coach-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.coach-info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.coach-name {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.coach-title {
+    font-size: 1.1rem;
+    margin: 5px 0 0;
+    color: #ccc;
+}
+
+.coach-experience {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #eee;
+    line-height: 1.4;
+}
+
+.experience-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.other-coaches {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    color: #ccc;
+}
+
+.players-section {
+    margin-top: 3rem;
+    background: #111;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.players-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.players-list {
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.player-item {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.player-item strong {
+    font-weight: bold;
+}
+
+.and-many-more {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .team-profile-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    font-size: 14px;
+  }
+
+  .coach-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .coach-card-left .coach-image {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .coach-card-right .coach-info {
+    order: 2;
+  }
+
+  .coach-card-right .coach-image {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    order: 1;
+  }
+  
+  .coach-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .coach-info {
+    text-align: center;
+  }
+  
+  .players-section {
+    padding: 1.5rem;
+  }
+
+  .players-list {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .player-item {
+    font-size: 1rem;
+  }
+}
